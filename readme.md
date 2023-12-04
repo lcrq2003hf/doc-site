@@ -18,3 +18,5 @@
  - config.ts
    - defineConfig 设置站点
  - 部署
+   - [文档地址](https://lcrq2003hf.github.io/doc-site/)
+   - [静态资源(图片)的处理](https://vitepress.dev/guide/asset-handling#referencing-static-assets)

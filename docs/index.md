@@ -6,7 +6,7 @@ hero:
   text: javascript
   tagline: 文档
   image:
-    src: /public/logo.png
+    src: /logo.png
     alt: 文档
   actions:
     - theme: brand

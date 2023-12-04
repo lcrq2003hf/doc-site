@@ -1,5 +1,9 @@
-.vscode
 node_modules
+
+.vscode
+.idea
+.DS_Store
+.history
 
 **/.vitepress/cache
 **/.vitepress/.temp
