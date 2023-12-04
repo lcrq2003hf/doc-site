@@ -33,7 +33,7 @@ const sidebar: DefaultTheme.Sidebar = {
 export default defineConfig({
   title: '123',
   lang: 'cn-ZH',
-  base: '/',
+  base: '/doc-site/',
   lastUpdated: true,
   themeConfig: {
     nav,
