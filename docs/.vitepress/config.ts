@@ -7,6 +7,7 @@ import { componentsRoutes } from '../components'
 import { navesRoutes } from '../nav'
 import { githubRoutes } from '../github'
 import { nodeRoutes } from '../node'
+import { vitepressRoutes } from '../vitepress'
 
 const nav: DefaultTheme.NavItem[] = [
   { text: '指南', link: '/guide/' },
@@ -36,6 +37,9 @@ const sidebar: DefaultTheme.Sidebar = {
   '/node/': [
     ...nodeRoutes
   ],
+  '/vitepress/': [
+    ...vitepressRoutes
+  ],
 }
 
 export default defineConfig({
@@ -46,6 +50,9 @@ export default defineConfig({
   themeConfig: {
     nav,
     sidebar,
+    search: {
+      provider: 'local'
+    },
     socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }]
   }
 })

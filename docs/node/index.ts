@@ -1,15 +1,32 @@
 import { DefaultTheme } from "vitepress";
 
 export const nodeRoutes: DefaultTheme.SidebarItem[] = [
-  { text: 'Node.js', items: [
-    { text: '脚手架', collapsed: true, items: [
-      { text: '环境配置', link: '/node/cli/environment' },
-      { text: '创建 ts 工具库', link: '/node/cli/create-lib' },
-      { text: 'commander', link: '/node/cli/commander' },
-      { text: 'inquirer', link: '/node/cli/inquirer' },
-      { text: 'shelljs', link: '/node/cli/shelljs' },
-      { text: 'ora', link: '/node/cli/ora' },
-      { text: 'chalk', link: '/node/cli/chalk' },
-    ] }
-  ] }
-]
+  {
+    text: "Node.js",
+    items: [
+      {
+        text: "脚手架",
+        collapsed: true,
+        items: [
+          {
+            text: "工程创建",
+            items: [
+              { text: "环境配置", link: "/node/cli/overview/environment" },
+              { text: "创建 ts 工具库", link: "/node/cli/overview/create-lib" },
+            ],
+          },
+          {
+            text: "工具",
+            items: [
+              { text: "commander", link: "/node/cli/tools/commander" },
+              { text: "inquirer", link: "/node/cli/tools/inquirer" },
+              { text: "shelljs", link: "/node/cli/tools/shelljs" },
+              { text: "ora", link: "/node/cli/tools/ora" },
+              { text: "chalk", link: "/node/cli/tools/chalk" },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+];
