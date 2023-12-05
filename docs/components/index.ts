@@ -1,6 +1,6 @@
 import { DefaultTheme } from "vitepress";
 
-export const components: DefaultTheme.SidebarItem[] = [
+export const componentsRoutes: DefaultTheme.SidebarItem[] = [
   {
     text: '分组一',
     items: [

@@ -3,8 +3,10 @@
 //   description: 'Just playing around.'
 // }
 import { DefaultTheme, defineConfig } from 'vitepress'
-import { components } from '../components'
-import { naves } from '../nav'
+import { componentsRoutes } from '../components'
+import { navesRoutes } from '../nav'
+import { githubRoutes } from '../github'
+import { nodeRoutes } from '../node'
 
 const nav: DefaultTheme.NavItem[] = [
   { text: '指南', link: '/guide/' },
@@ -23,15 +25,21 @@ const sidebar: DefaultTheme.Sidebar = {
     }
   ],
   '/components/': [
-    ...components
+    ...componentsRoutes
   ],
   '/nav/': [
-    ...naves
-  ]
+    ...navesRoutes
+  ],
+  '/github/': [
+    ...githubRoutes
+  ],
+  '/node/': [
+    ...nodeRoutes
+  ],
 }
 
 export default defineConfig({
-  title: '123',
+  title: '前端随笔',
   lang: 'cn-ZH',
   base: '/doc-site/',
   lastUpdated: true,
