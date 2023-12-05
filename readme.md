@@ -8,15 +8,16 @@
  - 安装和使用
    - 方式一：npm add -D vitepress
    - 方式二：npx vitepress init
+   - package.json
+     - 配置 type: module
  - 路由
+ - config.ts
+   - defineConfig 设置站点
  - nav
  - sidebar
    - 多级侧边栏
- - frontmatter
- - package.json
-   - 配置 type: module
- - config.ts
-   - defineConfig 设置站点
+ - layout
+   - frontmatter
  - 部署
    - [文档地址](https://lcrq2003hf.github.io/doc-site/)
    - [静态资源(图片)的处理](https://vitepress.dev/guide/asset-handling#referencing-static-assets)
