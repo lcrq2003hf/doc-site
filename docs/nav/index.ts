@@ -5,5 +5,7 @@ export const navesRoutes: DefaultTheme.SidebarItem[] = [
     { text: 'github', link: '/github/alias' },
     { text: 'node', link: '/node/index' },
     { text: 'vitepress', link: '/vitepress/overview' },
+    { text: 'css', link: '/css/atomic' },
+    { text: 'markdown', link: '/markdown/demo' },
   ] }
 ]

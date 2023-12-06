@@ -8,6 +8,8 @@ import { navesRoutes } from '../nav'
 import { githubRoutes } from '../github'
 import { nodeRoutes } from '../node'
 import { vitepressRoutes } from '../vitepress'
+import { cssRoutes } from '../css'
+import { markdownRoutes } from '../markdown'
 
 const nav: DefaultTheme.NavItem[] = [
   { text: '指南', link: '/guide/' },
@@ -39,6 +41,12 @@ const sidebar: DefaultTheme.Sidebar = {
   ],
   '/vitepress/': [
     ...vitepressRoutes
+  ],
+  '/css/': [
+    ...cssRoutes
+  ],
+  '/markdown/': [
+    ...markdownRoutes
   ],
 }
 
