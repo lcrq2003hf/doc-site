@@ -3,6 +3,7 @@
 //   description: 'Just playing around.'
 // }
 import { DefaultTheme, defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 import { componentsRoutes } from '../components'
 import { navesRoutes } from '../nav'
 import { githubRoutes } from '../github'
@@ -15,6 +16,7 @@ const nav: DefaultTheme.NavItem[] = [
   { text: '指南', link: '/guide/' },
   { text: '组件', link: '/components/foo' },
   { text: '导航', link: '/nav/' },
+  ...(vitepressRoutes as unknown as DefaultTheme.NavItem[])
 ]
 
 const sidebar: DefaultTheme.Sidebar = {
@@ -50,7 +52,7 @@ const sidebar: DefaultTheme.Sidebar = {
   ],
 }
 
-export default defineConfig({
+export default withMermaid({
   title: '前端随笔',
   lang: 'cn-ZH',
   base: '/doc-site/',
