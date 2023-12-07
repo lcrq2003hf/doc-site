@@ -2,6 +2,29 @@
 
 [官网教程](https://markdown.com.cn/extended-syntax/footnotes.html)
 
+[思维导图官网](https://mermaid.js.org/#/)
+
+``` mermaid
+flowchart LR
+  Start --> Stop
+```
+
+流程图：
+  - 横向
+    - LR
+    - RL
+  - 竖向
+    - TB
+    - BT
+
+``` mermaid
+graph LR
+A[Hard] -->|Text| B(Round)
+B --> C{Decision}
+C -->|One| D[Result 1]
+C -->|Two| E[Result 2]
+```
+
 ### 代码块
 
 ``` js
@@ -9,9 +32,9 @@ const hw = 'hello world'
 ```
 
 ```
-\```
+<!-- ```
 const hw = 'hello world'
-\```
+​``` -->
 ```
 
 
@@ -27,6 +50,7 @@ const hw = 'hello world'
 **重点：**注意最后一个 ] 之后的空格，否则不生效
 
 - [ ] 选择框
+- [x] 选择框
 
 ```
 - [ ] 选择框

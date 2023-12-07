@@ -17,5 +17,8 @@
     "vite": "^5.0.4",
     "vitepress": "^1.0.0-rc.31",
     "vitepress-plugin-mermaid": "^2.0.16"
+  },
+  "dependencies": {
+    "markdown-it-task-lists": "^2.1.1"
   }
 }

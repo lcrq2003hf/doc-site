@@ -11,6 +11,7 @@ import { nodeRoutes } from '../node'
 import { vitepressRoutes } from '../vitepress'
 import { cssRoutes } from '../css'
 import { markdownRoutes } from '../markdown'
+import markdownItTaskLists from 'markdown-it-task-lists'
 
 const nav: DefaultTheme.NavItem[] = [
   { text: '指南', link: '/guide/' },
@@ -64,5 +65,10 @@ export default withMermaid({
       provider: 'local'
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }]
+  },
+  markdown: {
+    config(md) {
+        md.use(markdownItTaskLists)
+    },
   }
 })
