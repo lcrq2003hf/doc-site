@@ -14,6 +14,7 @@ export const vitepressRoutes: DefaultTheme.SidebarItem[] = [
     ] },
     { text: '布局', link: '/vitepress/layout',  },
     { text: '部署', link: '/vitepress/deploy' },
+    { text: '集成思维导图', link: '/vitepress/mermaid' },
     { text: '图标', link: '/vitepress/icon' },
   ] }
 ]
