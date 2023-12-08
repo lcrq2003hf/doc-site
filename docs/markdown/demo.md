@@ -4,6 +4,10 @@
 
 [思维导图官网](https://mermaid.js.org/#/)
 
+``` md
+> 引用
+```
+
 ``` mermaid
 flowchart LR
   Start --> Stop
@@ -31,10 +35,8 @@ C -->|Two| E[Result 2]
 const hw = 'hello world'
 ```
 
-```
-<!-- ```
+``` md
 const hw = 'hello world'
-​``` -->
 ```
 
 
@@ -133,11 +135,12 @@ const hw = 'hello world'
 
 ### 删除线
 
+``` md
+~~文字~~
+```
+
 ~~文字~~
 
-```
-~~文字~~
-```
 
 
 # 标题
