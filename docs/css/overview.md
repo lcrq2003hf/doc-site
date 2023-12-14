@@ -55,7 +55,7 @@ element.style.setProperty("--my-var", jsVar + 4);
 
 ### base -> html, body 等样式
 
-### objects -> 暂时忽略
+### objects -> 公共布局样式
 
 ### components -> 组件样式
 

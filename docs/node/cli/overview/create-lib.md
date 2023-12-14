@@ -1,5 +1,7 @@
 # 创建 ts 工具库
 
+[esbuild 调研](https://juejin.cn/post/7310168607342624808)
+
 1. #### 初始化项目
 
    ```shell
