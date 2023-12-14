@@ -16,7 +16,7 @@ import markdownItTaskLists from 'markdown-it-task-lists'
 const nav: DefaultTheme.NavItem[] = [
   { text: '指南', link: '/guide/' },
   { text: '组件', link: '/components/foo' },
-  { text: '导航', link: '/nav/' },
+  ...(navesRoutes as unknown as DefaultTheme.NavItem[]),
   ...(vitepressRoutes as unknown as DefaultTheme.NavItem[])
 ]
 
@@ -32,9 +32,6 @@ const sidebar: DefaultTheme.Sidebar = {
   ],
   '/components/': [
     ...componentsRoutes
-  ],
-  '/nav/': [
-    ...navesRoutes
   ],
   '/github/': [
     ...githubRoutes
